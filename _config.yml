@@ -3,6 +3,8 @@ permalink: /:categories/:title.html
 url: 
 lsi: false
 highlighter: pygments
+redcarpet:
+      extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 safe: true
 
 gems: [jekyll-paginate]
