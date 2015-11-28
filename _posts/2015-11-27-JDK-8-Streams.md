@@ -14,3 +14,22 @@ public class HelloWorld{
     }
 }
 ```
+
+The above one is a simple java programs to test the blog site,
+There is going to be many blogs about java, jdk 8 new features etc..
+
+## Big Data Technologies
+* Batch Processing
+* Real Time Processing
+
+## Functional Programming
+* JDK 8
+* Scala
+
+## Reactive Programming
+* Rx-Java
+
+## NoSQL
+* HBase
+* Cassandra
+* MongoDB
