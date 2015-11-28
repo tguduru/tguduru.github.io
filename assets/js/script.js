@@ -37,8 +37,8 @@ $(function () {
         $(this).easySocialButtons({
             url: $(this).data("url"),
             pageTitle: $(this).data("title"),
-            orders: ["twitter", "hatebu", "facebook", "googleplus"],
-            waitCounter: '<span>Wait...</span>'
+            orders: ["twitter", "googleplus"],
+            waitCounter: '<span>0</span>'
         });
     });
 });

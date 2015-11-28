@@ -2,7 +2,6 @@
 # Basic settings.
 #
 #baseurl: http://localhost:4000
-#baseurl: http://qckanemoto.github.io
 baseurl: http://tguduru.github.io
 title: Guduru, Thirupathi Reddy
 description: Some descriptions of yourself.
@@ -14,12 +13,12 @@ language: en
 #
 icons:
   rss: true
-  email:
+#  email:
   github: tguduru
-  bitbucket:
+#  bitbucket:
   twitter: tguduru
   linkedin: http://www.linkedin.com/in/thirupathireddyguduru
-  youtube:
+# youtube:
 
 #
 # Prettify url.
@@ -29,8 +28,7 @@ permalink: pretty
 #
 # Scripts.
 #
-google_analytics: # e.g. UA-000000-01
-disqus:
+disqus: tguduru
 
 #
 # Localizations.
@@ -56,7 +54,7 @@ paginate_path: page/:num
 #
 # Social.
 #
-share_buttons: false
+share_buttons: true
 ogp:
   image_url: http://qckanemoto.github.io/jekyll-qck-theme/assets/img/ogp.png
   fb:
@@ -68,6 +66,7 @@ ogp:
 #
 gems:
   - jemoji
+  - jekyll-paginate
 
 #
 # Styles: see "_sass/base/_variables.scss"
@@ -82,7 +81,7 @@ include: ["_pages"]
 markdown: redcarpet
 redcarpet:
   extensions: ["autolink", "fenced_code_blocks", "strikethrough", "superscript", "with_toc_data", "tables", "footnotes", "no_intra_emphasis"]
-highlighter: pygments
+highlighter: rouge
 
 excerpt_separator: <!--more-->
 
