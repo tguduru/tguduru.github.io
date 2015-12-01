@@ -46,22 +46,52 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
 
     <link href="{{ '/assets/lib/easy-social-buttons/jquery.easy-social-buttons.css' | prepend: site.baseurl }}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
+
+          
     
 </head>
 <body>
 <header class="site-header">
-    <div class="inner clearfix">
-        {% if site.avatar %}
-        <a href="{{ '/' | prepend: site.baseurl }}">
-            <img class="avatar" src="{{ site.avatar | prepend: site.baseurl }}" alt=""/>
-        </a>
-        {% endif %}
-        <h1 class="clearfix">
-            <a class="title {% if site.avatar == null %}slim{% endif %}" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
-            <p class="description">{{ site.description }}</p>
-        </h1>
+   <nav id="mainNav" class="navbar navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="/">Tech Bits</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                {% if page.url contains '/hadoop' %}
+                    <li class="active">
+                        <a class="page-scroll" href="/hadoop">Hadoop</a></li>
+                    {% else %}
+                    <li> <a class="page-scroll" href="/hadoop">Hadoop</a>
+                </li>
+                {% endif %}
+                   
+                {% if page.url contains '/hbase' %}
+                    <li class="active">
+                        <a class="page-scroll" href="/hbase">HBase</a></li>
+                    {% else %}
+                    <li> <a class="page-scroll" href="/hbase">HBase</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container-fluid -->
+</nav>
 </header>
 
 <div class="site-container">
@@ -70,7 +100,7 @@
     </div>
 
     <aside class="site-aside">
-        <div class="inner">
+        <div class="inner sticky">
             <div class="block">
                 <form action="{{ site.baseurl }}/search">
                     <input type="search" id="search" name="q" placeholder="{{ site.str_search }}" />
@@ -89,7 +119,7 @@
             </ul>
             <hr class="with-no-margin margin-bottom"/>
 
-            <div class="block sticky">
+            <div class="block">
                 <h1>{{ site.str_recent_posts }}</h1>
                 <ul>
                     {% assign posts = (site.posts | sort: 'date' | reverse) %}
