@@ -31,10 +31,10 @@
 
 
 //nav bar color
-$bgDefault      : #e67e22;
-$bgHighlight    : #d35400;
+$bgDefault      : #f98752;
+$bgHighlight    : #FFF5EE;
 $colDefault     : #ecf0f1;
-$colHover       : #ffe6d1;
+$colHover       : #383838;
 
 /* --- Style --- */
 .navbar-custom {
@@ -82,4 +82,10 @@ $colHover       : #ffe6d1;
         &:hover, &:focus {
             color: $colHover;
             background-color: $bgHighlight; }}
+}
+
+//nav bar text size
+.nav-bar-text{
+    font-size: 20px;
+    font-family: sans-serif;
 }
