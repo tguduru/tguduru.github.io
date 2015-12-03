@@ -46,12 +46,12 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
 
     <link href="{{ '/assets/lib/easy-social-buttons/jquery.easy-social-buttons.css' | prepend: site.baseurl }}" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
 
-          
-    
+
+
 </head>
 <body>
 <header class="site-header">
@@ -71,21 +71,21 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigationbar">
             <ul class="nav navbar-nav navbar-left nav-bar-text">
-                {% if page.url contains '/hadoop' %}
+                <!-- {% if page.url contains '/hadoop' %}
                     <li class="active">
                         <a class="page-scroll" href="/hadoop">Hadoop</a></li>
                     {% else %}
                     <li> <a class="page-scroll" href="/hadoop">Hadoop</a>
                 </li>
                 {% endif %}
-                   
+
                 {% if page.url contains '/hbase' %}
                     <li class="active">
                         <a class="page-scroll" href="/hbase">HBase</a></li>
                     {% else %}
                     <li> <a class="page-scroll" href="/hbase">HBase</a>
                 </li>
-                {% endif %}
+                {% endif %} -->
                 {% if page.url contains '/misc' %}
                     <li class="active">
                         <a class="page-scroll" href="/misc">Miscellaneous</a></li>
@@ -141,7 +141,7 @@
 
 <footer class="site-footer">
     <div class="inner">
-        <span>Powered by <a href="http://jekyllrb.com">Jekyll</a>
+        <span>Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="https://github.com/">Github</a>
     </div>
 </footer>
 
