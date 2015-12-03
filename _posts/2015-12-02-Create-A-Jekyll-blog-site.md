@@ -39,7 +39,7 @@ The category element of the jekyll will tell jekyll to generate this post into t
 {% highlight html %}
 ---
 layout: category
-title: HBase
+title: Some blog
 category: misc
 hide: true
 ---
