@@ -6,7 +6,7 @@ category: misc
 ---
 As you are continuously learning through technologies you might want to share your knowledge with other fellow engineers. To do this you need to have a proper medium and that is through blogs. I have had the same thought and was looking for good blogging technologies where i can write blogs and publish to all.
 
-After couple of days of research i opted for [Jekyll](http://jekyllrb.com/) and [Github](https://github.com/) as we can create nice blogs with Jekyll and publish through github. And Jekyll also has some built-in features like code highlighter will be helpful while writing blogs.
+After couple of days of research i opted for **[Jekyll](http://jekyllrb.com/)** and **[Github](https://github.com/)** as we can create nice blogs with Jekyll and publish through github. And Jekyll also has some built-in features like code highlighter will be helpful while writing blogs.
 
 <!--more-->
 
