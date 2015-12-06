@@ -15,7 +15,7 @@ The initial hurdle to get start is to select a theme for the Jekyll blog site. I
 
 After choosing your theme you might need the following features in it to make it more interactive with others.
 
-* Navigation bar site to categorize blogs
+* Navigation bar to categorize blogs
 * Share blogs through social media.
 * Provide a way to discuss about the blog in the site.
 
