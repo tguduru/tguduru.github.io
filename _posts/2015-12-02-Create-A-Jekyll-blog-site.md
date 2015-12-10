@@ -27,17 +27,15 @@ After choosing your theme you might need the following features in it to make it
 
  * Once you got now you need to generate the site so that posts can be organized into the categorizes. Jekyll has nice built-in support for categorizing posts. Define a post with the following element in the post header configuration.
 
- {% highlight css %}
-
+{% highlight css linenos %}
 category: misc
-
 {% endhighlight %}
 
 The category element of the jekyll will tell jekyll to generate this post into the folder of *misc*.
 
 * Now you need to define a **[category.html](https://github.com/tguduru/tguduru.github.io/blob/master/_layouts/category.html)** in the _layouts folder as in the link.
 * Create a folder named as the category (misc) and add a file as index.html with the following content
-{% highlight html %}
+{% highlight html linenos %}
 ---
 layout: category
 title: Some blog
@@ -48,8 +46,8 @@ hide: true
 This will build a home page with all the posts in the category when you click on this categories menu bar.
 
 * Then you can define the nav bar name and its url as follows in the default.html
-{% highlight html %}
-<a class="page-scroll" href="/misc">Miscellaneous</a></li>
+{% highlight html linenos %}
+<a class="page-scroll" href="/misc">Miscellaneous</a>
 {% endhighlight %}
 
 ## Social Integration
@@ -57,14 +55,14 @@ There are lot of ways to get your site integrated with social media but i person
 
 * Include the following into your default.html
 
-``` html
+{% highlight html linenos %}
 <script src="http://share.donreach.com/buttons.js"></script>
-```
+{% endhighlight %}
+
 
 * Include the following html code into a a page could be as share.html and include that in the header/footer depends on whether you want to be on both header & footer both or on a single side. Include what social media you want like twitter/linkedin/google etc...
 
-``` html
-
+{% highlight html linenos %}
 <div class="don-share" data-url="<url>" data-image="" data-style="icons" data-bubbles="hover" data-title="<page title>">
     <div class="don-share-twitter"></div>
     <div class="don-share-google"></div>
@@ -72,10 +70,10 @@ There are lot of ways to get your site integrated with social media but i person
     <div class="don-share-reddit"></div>
     <div class="don-share-facebook"></div>
   </div>
+{% endhighlight %}
 
-```
 All the above data items can be sent to social media like twitter/linkedin when sharing. Look for documentation on **[don reach](http://donreach.com/social-share-buttons)** for additional details.
 
 ## Disqus
 
-Disqus provides great discussion forum and its easy to integrate with your blog. Add the disqus script provdied by disqus into your footer.html.
+**[Disqus](https://disqus.com/)** provides great discussion forum and its easy to integrate with your blog. Add the disqus script provdied by disqus into your footer.html.
