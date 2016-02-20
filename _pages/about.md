@@ -6,8 +6,8 @@ order: 1
 share: false
 ---
 
-I am ,**[Thirupathi Reddy Guduru]({{ site.icons.linkedin}})** , a passionate software engineer.
-I like to read books and follow technology websites like **[infoq](http://www.infoq.com/)** , **[DZone](https://dzone.com/)** and **[jaxenter](https://jaxenter.com/)**.
+I am ,**[Thirupathi Reddy Guduru]({{ site.icons.linkedin}})** , a passionate software engineer, Java & Scala lover.
+I like to read books and follow technology websites like **[infoq](http://www.infoq.com/)** , **[DZone](https://dzone.com/)** and **[jaxenter](https://jaxenter.com/)**. Interested in distributed and micro-services based architectures.
 
 
 
