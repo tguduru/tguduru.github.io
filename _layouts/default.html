@@ -79,15 +79,15 @@
                     {% else %}
                     <li> <a class="page-scroll" href="/hadoop">Hadoop</a>
                 </li>
-                {% endif %}
-
-                {% if page.url contains '/hbase' %}
-                    <li class="active">
-                        <a class="page-scroll" href="/hbase">HBase</a></li>
-                    {% else %}
-                    <li> <a class="page-scroll" href="/hbase">HBase</a>
-                </li>
                 {% endif %} -->
+
+                {% if page.url contains '/lucene' %}
+                    <li class="active">
+                        <a class="page-scroll" href="/solrlucene">SolrLucene</a></li>
+                    {% else %}
+                    <li><a class="page-scroll" href="/solrlucene">SolrLucene</a>
+                </li>
+                {% endif %}
                 {% if page.url contains '/misc' %}
                     <li class="active">
                         <a class="page-scroll" href="/misc">Miscellaneous</a></li>
