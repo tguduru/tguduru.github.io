@@ -27,6 +27,10 @@ Lucene does the following while indexing text.
 * Index Documents.
 * Write index on to a file system or memory.
 
+Here is the simple diagram which explains the flow of Lucene indexing.
+
+![](/assets/img/Index-lucene.png)
+
 ### **Implementation**
 Now lets get into the code to see how it works.
 
